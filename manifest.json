@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "YoutubeFilter",
+    "version": "0.1",
+    "description": "Simple tool to help you filter youtube videos that are proposed to you",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "permissions":["tabs"],
+  
+    "background.service_worker": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "128": "images/icon128.png"
+    }
+}
